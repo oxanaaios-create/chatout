@@ -1,0 +1,19 @@
+# Что грузить агенту под задачу. loads — всегда, load_if_relevant — по ситуации.
+day_start:
+  loads: [CLAUDE.md, PROJECT.md, docs/plan.md]
+  load_if_relevant: [docs/devlog/, docs/decisions.md]
+research:
+  loads: [research/facts.md, research/hypotheses.md]
+  load_if_relevant: [research/competitors.md, research/ig/]
+design_system:
+  loads: [research/refs.md, visual/visual-system.json, visual/color.md, visual/typography.md, visual/layout.md]
+  load_if_relevant: [visual/art-direction.md, assets/]
+website:
+  loads: [recipes/website.md, magic_trick.md, verbal/positioning.md, verbal/voice-and-tone.md, visual/tokens.css, evals/quality-bar.md]
+  load_if_relevant: [verbal/strategy.md, visual/art-direction.md, examples/good/, examples/bad/, assets/]
+brandbook:
+  loads: [recipes/brandbook.md, verbal/, visual/]
+  load_if_relevant: [examples/]
+behance_case:
+  loads: [recipes/behance-case.md, docs/decisions.md, research/hypotheses.md]
+  load_if_relevant: [docs/devlog/, outputs/]

@@ -1,0 +1,29 @@
+name: Задача
+description: Задача с критерием приёмки. Без критерия задача не создаётся.
+labels: [task]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Что сделать
+      placeholder: Одна задача, один результат.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Критерий приёмки
+      description: Как проверить, что готово. Проверяемо, без «красиво» и «удобно».
+      placeholder: "- npm run check зелёный\n- на 390px нет горизонтального скролла"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Основание
+      description: Факт, гипотеза, решение или референс.
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Этап
+      options: [1. Факты и гипотезы, 2. Дизайн-система, 3. Сайт и брендбук, 4. Кейс, Сдача]

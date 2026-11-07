@@ -1,0 +1,86 @@
+{
+  "$description": "Source of truth for design tokens (DTCG). Starter values are neutral placeholders: replace them in step 2, then run npm run tokens.",
+  "color": {
+    "$type": "color",
+    "bg": { "$value": "#FAFAF9" },
+    "surface": { "$value": "#FFFFFF" },
+    "ink": { "$value": "#141414" },
+    "mute": { "$value": "#5C5C5A" },
+    "line": { "$value": "#E4E4E1" },
+    "accent": { "$value": "#1F4FFF" },
+    "on-accent": { "$value": "#FFFFFF" },
+    "ok": { "$value": "#1E7A4F" },
+    "warn": { "$value": "#9A5B00" },
+    "error": { "$value": "#B3261E" }
+  },
+  "font-family": {
+    "$type": "fontFamily",
+    "display": { "$value": ["system-ui", "-apple-system", "Segoe UI", "sans-serif"] },
+    "body": { "$value": ["system-ui", "-apple-system", "Segoe UI", "sans-serif"] }
+  },
+  "font-weight": {
+    "$type": "fontWeight",
+    "regular": { "$value": 400 },
+    "medium": { "$value": 500 },
+    "bold": { "$value": 700 }
+  },
+  "font-size": {
+    "$type": "dimension",
+    "s": { "$value": "14px" },
+    "m": { "$value": "16px" },
+    "l": { "$value": "20px" },
+    "xl": { "$value": "28px" },
+    "2xl": { "$value": "40px" }
+  },
+  "line-height": {
+    "$type": "dimension",
+    "s": { "$value": "20px" },
+    "m": { "$value": "24px" },
+    "l": { "$value": "28px" },
+    "xl": { "$value": "32px" },
+    "2xl": { "$value": "44px" }
+  },
+  "space": {
+    "$type": "dimension",
+    "1": { "$value": "4px" },
+    "2": { "$value": "8px" },
+    "3": { "$value": "12px" },
+    "4": { "$value": "16px" },
+    "5": { "$value": "24px" },
+    "6": { "$value": "32px" },
+    "7": { "$value": "48px" },
+    "8": { "$value": "64px" },
+    "9": { "$value": "96px" },
+    "10": { "$value": "120px" }
+  },
+  "radius": {
+    "$type": "dimension",
+    "s": { "$value": "8px" },
+    "m": { "$value": "16px" },
+    "l": { "$value": "24px" }
+  },
+  "control-height": {
+    "$type": "dimension",
+    "s": { "$value": "36px" },
+    "m": { "$value": "44px" },
+    "l": { "$value": "52px" }
+  },
+  "border": {
+    "$type": "dimension",
+    "hairline": { "$value": "1px" }
+  },
+  "motion": {
+    "$type": "duration",
+    "fast": { "$value": "150ms" },
+    "base": { "$value": "250ms" }
+  },
+  "$extensions": {
+    "kit.contrast": [
+      ["ink", "bg", "text"],
+      ["ink", "surface", "text"],
+      ["mute", "bg", "text"],
+      ["on-accent", "accent", "text"],
+      ["accent", "bg", "large"]
+    ]
+  }
+}

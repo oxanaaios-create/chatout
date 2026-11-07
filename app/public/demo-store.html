@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nova Lane Store · demo</title>
+<style>
+body{margin:0;font:16px/1.55 Georgia,serif;background:#F6F2EC;color:#1c1a18}
+header{padding:18px 24px;border-bottom:1px solid #e3dccf;display:flex;justify-content:space-between;align-items:center}
+header b{font:600 18px/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+main{max-width:980px;margin:0 auto;padding:32px 20px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px}
+.ph{aspect-ratio:1;border-radius:6px;background:#E8E1D6;display:grid;place-items:center}
+h1{font-weight:400;font-size:36px;margin:0 0 6px}
+.price{font:600 20px/1 system-ui,sans-serif;margin:12px 0 20px}
+.note{font:13px/1.5 system-ui,sans-serif;color:#7a7268;margin-top:22px}
+@media(max-width:720px){main{grid-template-columns:1fr}}
+</style></head>
+<body>
+<header><b>Nova Lane Store</b><span style="font:13px system-ui">Demo merchant page · fictional brand</span></header>
+<main>
+  <div class="ph"><svg viewBox="0 0 100 100" width="70%"><path d="M30 24l12-6c2 5 14 5 16 0l12 6 10 14-11 6-4-5v41H35V39l-4 5-11-6z" fill="#1C1C1C"/></svg></div>
+  <div>
+    <h1>Tour tee, black</h1>
+    <p>Heavyweight organic cotton, relaxed fit. Tour dates on the back.</p>
+    <div class="price">€35 · size M</div>
+    <!-- The whole integration is the two lines below -->
+    <chatout-pay sku="NL-TEE-BLK" option="M"></chatout-pay>
+    <p class="note">This page is plain HTML. The PayPal button comes from one script tag: &lt;script src="/embed.js"&gt;.</p>
+  </div>
+</main>
+<script src="/embed.js" async></script>
+</body></html>

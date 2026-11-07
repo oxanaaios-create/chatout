@@ -1,0 +1,47 @@
+/* Generated from visual/visual-system.json by npm run tokens. Do not edit by hand. */
+:root {
+  --color-bg: #FAFAF9;
+  --color-surface: #FFFFFF;
+  --color-ink: #141414;
+  --color-mute: #5C5C5A;
+  --color-line: #E4E4E1;
+  --color-accent: #1F4FFF;
+  --color-on-accent: #FFFFFF;
+  --color-ok: #1E7A4F;
+  --color-warn: #9A5B00;
+  --color-error: #B3261E;
+  --font-family-display: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-family-body: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-size-s: 14px;
+  --font-size-m: 16px;
+  --font-size-l: 20px;
+  --font-size-xl: 28px;
+  --font-size-2xl: 40px;
+  --line-height-s: 20px;
+  --line-height-m: 24px;
+  --line-height-l: 28px;
+  --line-height-xl: 32px;
+  --line-height-2xl: 44px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 120px;
+  --radius-s: 8px;
+  --radius-m: 16px;
+  --radius-l: 24px;
+  --control-height-s: 36px;
+  --control-height-m: 44px;
+  --control-height-l: 52px;
+  --border-hairline: 1px;
+  --motion-fast: 150ms;
+  --motion-base: 250ms;
+}
