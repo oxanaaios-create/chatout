@@ -58,7 +58,7 @@ async function gemini(messages: ChatMsg[]): Promise<AgentResult> {
   const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
     method: 'POST', headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key }, body: JSON.stringify(body), cache: 'no-store'
   });
-  if (!res.ok) throw new Error(`Gemini ${res.status}`);
+  if (!res.ok) { const e = await res.json().catch(() => ({})); throw new Error(`Gemini ${res.status}: ${String(e?.error?.message || '').slice(0, 140)}`); }
   const j = await res.json();
   const parts = j?.candidates?.[0]?.content?.parts || [];
   const call = parts.find((p: any) => p.functionCall)?.functionCall;
