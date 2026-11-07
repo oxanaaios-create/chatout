@@ -10,7 +10,7 @@
 | Аудитория | Покупатели 18–55 с деньгами в PayPal (таблица 16–55 в концепте) и бизнесы на PayPal Business |
 | Главное действие | Купить из ответа ИИ одним подтверждением PayPal, корзина из нескольких магазинов |
 | Стек | Next.js 16.4, React 19.3, TypeScript 5.9, PayPal Orders v2 + JS SDK (sandbox), Gemini (tool call) с фолбэком на правила |
-| Хостинг | [DATA NEEDED] Netlify или Render, Git CD из этого репо, base directory `app` |
+| Хостинг | Netlify, проект chatout-pp-demo, Git CD из main, base directory `app`, прод открыт, превью только для команды |
 | Домен | [DATA NEEDED] |
 | Контакт | pichugin.workspace@gmail.com |
 
@@ -18,7 +18,7 @@
 
 | Что | Ссылка |
 |---|---|
-| Прод | [DATA NEEDED] после деплоя |
+| Прод | https://chatout-pp-demo.netlify.app (Netlify, Git CD из main, base directory app) |
 | Концепт-канвас | https://claude.ai/artifact/2mZ8zZDttwYriABmgNemHW · копия `concept/chatout-canvas.html` |
 | Devpost | https://paypalaihackathon.devpost.com/ |
 | Studio OS | карточка `paypal-hackathon` |
