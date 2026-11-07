@@ -18,6 +18,7 @@
 
 | Что | Ссылка |
 |---|---|
+| Репозиторий | https://github.com/oxanaaios-create/chatout |
 | Прод | [DATA NEEDED] после деплоя |
 | Концепт-канвас | https://claude.ai/artifact/2mZ8zZDttwYriABmgNemHW · копия `concept/chatout-canvas.html` |
 | Devpost | https://paypalaihackathon.devpost.com/ |
